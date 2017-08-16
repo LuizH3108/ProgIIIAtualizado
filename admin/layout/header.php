@@ -4,8 +4,14 @@
       echo
          "
          <h2>
-            Bem vindo $usuario_nome  (<a href='sair.php'>sair</a>)
+            Usuário: $usuario_nome  (<a href='sair.php'>sair</a>)
          </h2>
          ";
    }
 ?>
+
+<nav>
+   <ul>
+      <li><a href="index.php?p=usuarios/listar">Usuários</a></li>
+   </ul>
+</nav>

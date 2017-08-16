@@ -1,6 +1,6 @@
 <section>
    <header>
-      Bem vindo
+      Bem vindo à página inicial
    </header>
    
 </section>

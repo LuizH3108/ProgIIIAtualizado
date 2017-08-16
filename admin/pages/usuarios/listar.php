@@ -27,12 +27,15 @@
                   <th> id </th> <th> nome </th> <th> e-mail </th> <th> senha </th> <th> admin </th>
                </tr>";
             while($row = $result->fetch_array()) {
+               $id = $row['id'];
                echo "<tr>";
-               echo "<td>".$row['id']."</td>";
+               echo "<td>$id</td>";
                echo "<td>".$row['nome']."</td>";
                echo "<td>".$row['email']."</td>";
                echo "<td>".$row['senha']."</td>";
                echo "<td>".$row['admin']."</td>";
+               echo "<td><a href='index.php?p=usuarios/cadastrar&id=$id'>Alterar</a></td>";
+               echo "<td><a href='processa_usuario.php?remover=remover&id=$id'>Remover</a></td>";
                echo "</tr>";
             }
          }

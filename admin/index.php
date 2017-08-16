@@ -12,9 +12,7 @@
       <?php require 'layout/header.php'; ?>
    </header>
    <main>
-      <?php
-         require "pages/$page.php";
-      ?>
+      <?php require "pages/$page.php"; ?>
    </main>
    <footer>
       <?php require 'layout/footer.php'; ?>
