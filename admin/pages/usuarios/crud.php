@@ -1,11 +1,11 @@
 <?php
-   require_once("acesso_bd.php");
+   require_once("/lib/data.php");
+   require_once("/lib/util.php");
    
    $remover = $_GET["remover"];
    
    if (isset($remover)){
-      $id = $_GET["id"];
-      $query = "delete from usuarios where id = $id";
+      $query = "delete from usuarios where id = $remover";
    } else {
       $id = $_POST["id"];
       $nome = $_POST["nome"];

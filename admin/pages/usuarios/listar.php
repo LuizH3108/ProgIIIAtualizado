@@ -1,6 +1,8 @@
 <?php
+   require_once("/lib/data.php");
+   require_once("/lib/util.php");
+
    $msg = $_GET["msg"];
-   require_once("acesso_bd.php");
    $query = "select id, nome, email, senha, admin from usuarios";
    $result = $conn->query($query);
    if (!$result) die($conn->error);
