@@ -12,6 +12,9 @@
   <title>Meus Filmes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
 </head>
 <body>
    <header>
@@ -32,4 +35,6 @@
       <?php require 'layout/footer.php'; ?>
    </footer>
 </body>
+<script src="../js/main.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </html>
