@@ -1,4 +1,10 @@
-<?php require_once 'verificar.php'; ?>
+<?php
+   require_once("logic/verificarSessao.php");
+   require_once("../lib/data.php");
+   require_once("../lib/util.php");
+   $msg = fromGet("msg");
+?>
+
 <!doctype html>
 <html lang="pt">
 <head>
@@ -11,8 +17,16 @@
    <header>
       <?php require 'layout/header.php'; ?>
    </header>
+
+   <article><?php if (isset($msg)) echo $msg;?></article>
+
    <main>
-      <?php require "pages/$page.php"; ?>
+      <?php
+         $params = explode("-", $page);
+         $params = array_reverse($params);
+         $params = implode("/",$params);
+         require "pages/$params.php";
+      ?>
    </main>
    <footer>
       <?php require 'layout/footer.php'; ?>

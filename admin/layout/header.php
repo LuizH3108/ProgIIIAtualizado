@@ -4,7 +4,7 @@
       echo
          "
          <h2>
-            Usuário: $usuario_nome  (<a href='sair.php'>sair</a>)
+            Usuário: $usuario_nome  (<a href='logic/autenticar.php?sair=1'>sair</a>)
          </h2>
          ";
    }
@@ -12,6 +12,6 @@
 
 <nav>
    <ul>
-      <li><a href="index.php?p=usuarios/listar">Usuários</a></li>
+      <li><a href="index.php?p=listar-usuarios">Usuários</a></li>
    </ul>
 </nav>
