@@ -17,14 +17,11 @@
   <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
 </head>
 <body>
-   <header>
-      <?php require 'layout/header.php'; ?>
-   </header>
-
+<div class="container">
+   <?php require 'layout/header.php'; ?>
    <article><?php if (isset($msg)) echo $msg;?></article>
-
    <main>
-      <?php
+      <<?php
          $params = explode("-", $page);
          $params = array_reverse($params);
          $params = implode("/",$params);
@@ -34,6 +31,7 @@
    <footer>
       <?php require 'layout/footer.php'; ?>
    </footer>
+</div>
 </body>
 <script src="../js/main.js"></script>
 <script src="../js/bootstrap.min.js"></script>
