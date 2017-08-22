@@ -12,7 +12,7 @@
     <div id="navbar" class="collapse navbar-collapse">
 <?php if ($auth) { ?>
       <ul class="nav navbar-nav">
-           <li class="active"><a href="#">Início</a></li>
+           <li><a href="index.php">Início</a></li>
            <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros<span class="caret"></span></a>
              <ul class="dropdown-menu">

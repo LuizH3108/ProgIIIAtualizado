@@ -1,6 +1,5 @@
 <section>
-   <header>
-      Bem vindo à página inicial
+   <header class="page-header">
+     <h2>Bem vindo ao sistema MeusFilmes</h2>
    </header>
-   
 </section>
