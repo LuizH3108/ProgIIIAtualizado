@@ -20,22 +20,28 @@
 ?>
 
 <section>
-   <header>
-      Informações do Usuário
+   <header class="page-header">
+      <h2>Informações do Usuário</h2>
    </header>
-   <form method="post" action="logic/processarUsuario.php">
-      <?php if(isset($id)) echo hidden("id", $id); ?>
-      <label>Nome:</label><br/>
-      <input type="text" name="nome" size="30" value="<?=$nome ?>"/><br/>
-      <label>E-mail:</label><br/>
-      <input type="text" name="email" size="30" value="<?=$email ?>"/><br/>
-      <label>Senha:</label><br/>
-      <input type="password" name="senha" size="10" value="<?=$senha ?>"/><br/>
-      <br/>
-      <input type="checkbox" name="admin" <?=($admin?"checked":"")?>/>
-      <label>Administrador</label><br/>
-      <br/>
-      <input type="submit" value="Gravar"/>
-      <input type="submit" formaction="index.php?p=listar-usuarios" value="Voltar"/>
-   </form>
+   <div class="col-lg-6 col-sm-1">
+      <form method="post" action="logic/processarUsuario.php">
+         <?php if(isset($id)) echo hidden("id", $id); ?>
+         <label>Nome:</label><br/>
+         <input type="text" name="nome" size="30" value="<?=$nome ?>" class="form-control"  placeholder="Nome" required="true"/><br/>
+         <label>E-mail:</label><br/>
+         <input type="email" placeholder="E-mail" name="email" size="30" value="<?=$email ?>" class="form-control" required="true"/><br/>
+         <label>Senha:</label><br/>
+         <input type="password" name="senha" size="10" value="<?=$senha ?>" class="form-control"  placeholder="Senha" required="true"/><br/>
+
+         <div class="checkbox">
+            <label> <input type="checkbox" name="admin" <?=($admin?"checked":"")?>>Usuário Administrador</label>
+         </div>
+         <br/>
+         <footer class="text-right">
+            <button type="submit"class="btn btn-primary"><i class="glyphicon glyphicon-ok"></i> Gravar</button>
+            <button type="submit" formaction="index.php?p=listar-usuarios" formnovalidate
+               class="btn btn-default"><i class="glyphicon glyphicon-home"></i> Voltar</button>
+         </footer>
+      </form>
+   </div>
 </section>

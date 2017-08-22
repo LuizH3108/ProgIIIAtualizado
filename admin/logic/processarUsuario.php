@@ -23,7 +23,7 @@
 
    $result = $conn->query($query);
    if (!$result){
-       header("Location: $root?p=listar-usuarios&msg=$conn->error);
+       header("Location: $root?p=listar-usuarios&msg=$conn->error");
    } else {
        header("Location: $root?p=listar-usuarios");
    }

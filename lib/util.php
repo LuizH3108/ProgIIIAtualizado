@@ -12,12 +12,11 @@
      return str_replace($search, $replace, $value);
  }
 
-
- function getHtml($tag, $value, $attr=""){
+function getHtml($tag, $value, $attr=""){
      return "<$tag $attr>$value</$tag>";
  }
 
- function h1($value){
+function h1($value){
      return getHtml("h1",$value);
  }
 
@@ -25,7 +24,7 @@ function hidden($name, $value){
    return "<input type='hidden' name='$name' value='$value'/>";
 }
 
- function fromPost($var){
+function fromPost($var){
     if (isset($_POST[$var]))
       return sanitize_unsafe($_POST[$var]);
 }

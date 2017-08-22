@@ -15,4 +15,5 @@
    if (isset($_SESSION['nome'])){
       $usuario_nome = $_SESSION['nome'];
    }
+   $auth = isset($usuario_email) &&  isset($usuario_nome);
 ?>
