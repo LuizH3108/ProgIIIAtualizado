@@ -1,0 +1,8 @@
+Tecnologias utilizadas
+-> php (5 ou 7) (estruturado ou Orientado a objetos)
+-> mysql
+-> html/CSS/JS
+
+Hospedagem/Publicação
+-> Azure/Google Cloud/Amazon AWS
+

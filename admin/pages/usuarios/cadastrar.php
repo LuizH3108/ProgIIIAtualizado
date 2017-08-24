@@ -23,7 +23,7 @@
    <header class="page-header">
       <h2>Informações do Usuário</h2>
    </header>
-   <div class="col-lg-6 col-sm-1">
+   <div class="col-lg-6 col-sm-6">
       <form method="post" action="logic/processarUsuario.php">
          <?php if(isset($id)) echo hidden("id", $id); ?>
          <label>Nome:</label><br/>

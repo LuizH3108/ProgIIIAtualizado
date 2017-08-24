@@ -1,0 +1,22 @@
+Módulo Administrativo
+   - Cadastrar usuários
+   - Cadastrar categorias
+   - Cadastrar classificações
+   - Cadastrar filmes
+
+Módulo Público
+-> Anônimo
+   - Listar Filmes
+   - Pesquisar filmes por nome, categoria e classificação
+   - Visualizar detalhes do filme (informações/trailer)
+   - Sugestão de filmes
+   - Se inscrever
+-> Registrado
+   - Cadastrar filmes
+   - Comentar e classificar filmes
+   - Sugestão de filmes
+
+
+Requisitos adicionais
+ -> Segurança
+ -> Portabilidade
