@@ -1,0 +1,5 @@
+Data de entrega: 20/09/2017
+Formato: 
+   - Repositório no Github
+   - Publicação na Internet (Azure/Nuvem)
+   - Apresentação sobre a implementação
